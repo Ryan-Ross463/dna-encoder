@@ -1,0 +1,91 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+.astro/
+
+# Environment variables (protect secrets)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Allow .env.example files (safe to share)
+!.env.example
+!**/.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+.jest/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads and storage
+uploads/
+storage/
+files/
+
+# Mobile
+.expo/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Ionic
+www/
+platforms/
+plugins/
+*.apk
+*.aab
+*.ipa
+
+# Misc
+.cache/
+.parcel-cache/
+.next/
+out/
+.nuxt/
+.turbo/

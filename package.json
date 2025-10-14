@@ -1,0 +1,38 @@
+{
+  "name": "dna-encoder",
+  "version": "1.0.0",
+  "description": "DNA Storage Codec Application - Research prototype for encoding/decoding digital data to/from DNA quaternary sequences",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "frontend/*"
+  ],
+  "scripts": {
+    "dev:user": "cd services/user-management && npm run dev",
+    "dev:codec": "cd services/codec-service && npm run dev",
+    "dev:storage": "cd services/object-storage && npm run dev",
+    "dev:web": "cd frontend/web && npm run dev",
+    "dev:mobile": "cd frontend/mobile && npm run dev",
+    "install:all": "npm install && npm run install:services && npm run install:frontend",
+    "install:services": "cd services/user-management && npm install && cd ../codec-service && npm install && cd ../object-storage && npm install && cd ../shared && npm install",
+    "install:frontend": "cd frontend/web && npm install && cd ../mobile && npm install",
+    "build:all": "npm run build:services && npm run build:frontend",
+    "build:services": "cd services/user-management && npm run build && cd ../codec-service && npm run build && cd ../object-storage && npm run build",
+    "build:frontend": "cd frontend/web && npm run build && cd ../mobile && npm run build"
+  },
+  "keywords": [
+    "dna-storage",
+    "bioinformatics",
+    "encoding",
+    "decoding",
+    "quaternary-sequences",
+    "research",
+    "molecular-storage"
+  ],
+  "author": "DNA Encoder Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
